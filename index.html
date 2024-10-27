@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation de Billets de Train</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Réserver un Billet de Train</h1>
+  <form id="reservationForm">
+    <label for="from">Départ :</label>
+    <input type="text" id="from" placeholder="Ville de départ">
+
+    <label for="to">Arrivée :</label>
+    <input type="text" id="to" placeholder="Ville d'arrivée">
+
+    <label for="date">Date :</label>
+    <input type="date" id="date">
+
+    <label for="passengers">Nombre de passagers :</label>
+    <input type="number" id="passengers" min="1" value="1">
+
+    <button type="button" onclick="calculatePrice()">Calculer le prix</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
